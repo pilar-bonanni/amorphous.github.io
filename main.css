@@ -1,0 +1,268 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'blackmango';
+    src: url('black/BlackMango-Light.ttf') format('TrueType'); /* Ajusta el formato según sea necesario */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1{
+    color: white;
+    padding-right: 80px;
+    padding-top: 30px;
+    font-family: 'blackmango', sans-serif;
+    display: flex;
+    justify-content: end;
+    background: rgba(102, 65, 35, 0.938);
+
+}
+
+.seccion1{
+    display: flex;
+    padding: 3rem 2rem 8rem 2rem;
+    background: rgba(102, 65, 35, 0.938);
+}
+
+
+.seccion1 .portada span{
+    color: white;
+    font-family: 'blackmango', sans-serif;
+    font-size: 6.5rem;
+    display: flex;
+    width: 50vw;
+}
+
+.relleno{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 50vw;
+    padding-right: 30px;
+}
+
+.relleno a{
+    display: flex;
+    background: rgba(255, 255, 255, 0.068);
+    color: white;
+    font-size: 0.9rem;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+}
+
+.seccion{
+    display: flex;
+    padding: 2rem 0rem 3rem 3rem;
+    background: rgba(102, 65, 35, 0.938);
+
+}
+
+.seccion h5{
+    font-family: 'blackmango', sans-serif;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    font-size: 3rem;
+}
+
+.seccion .logo{
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    color:rgba(255, 255, 255, 0.822) ;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+}
+
+.seccion .vision{
+    display: flex;
+    display: inline-block;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    color:rgba(255, 255, 255, 0.822) ;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+}
+
+.seccion .logo span, .seccion .vision span{
+    display: flex;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+}
+
+/* Estilo inicial de los elementos */
+.seccion main {
+    opacity: 0; /* Inicia invisible */
+    transition: opacity 2s ease-in-out; /* Transición suave de la opacidad */
+}
+
+#seccion3 {
+    background: rgba(102, 65, 35, 0.938);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#seccion3 h3{
+    font-size: 2rem;
+    font-family: 'blackmango', sans-serif;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-style: oblique;
+    color:rgba(245, 245, 245, 0.932);
+}
+
+.planes {
+    display: flex;         /* Activa Flexbox para este contenedor */
+    justify-content: space-between; /* Espacia los elementos hijos igualmente */
+    align-items: center;   /* Alinea los elementos hijos verticalmente en el centro */
+    font-family: 'Syne', sans-serif;
+}
+
+.planes > div {
+    flex-grow: 1;          /* Permite que cada elemento hijo crezca de manera que utilice el espacio disponible */
+    text-align: center;    /* Centra el texto dentro de cada plan */
+    margin: 30px 10px;        /* Añade un margen horizontal para asegurar que no estén pegados */
+    border: 1px solid rgba(150, 116, 89, 0.767);;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.planes h4{
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.detalle1 span, .detalle2 span, .detalle3 span{
+    color: rgba(245, 245, 245, 0.911);
+    list-style:circle;
+    text-align: start;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 150;
+}
+
+.seccion4 {
+    background: rgba(102, 65, 35, 0.938);
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    color: rgba(245, 245, 245, 0.911);
+    text-align: center;
+    padding: 20px;
+}
+
+.seccion4 h5{
+    padding-bottom: 20px;
+    font-family: 'blackmango', sans-serif;
+}
+
+.seccion4 .clientes{
+    display: flex;
+    flex-direction: row;
+}
+
+.seccion4 .clientes img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.seccion4 a{
+    color: rgba(245, 245, 245, 0.911);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+@media (max-width: 900px){
+.container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+h1{
+        justify-content: center;
+        padding: 50px 0px 10px 0px;
+        background: rgba(0, 0, 0, 0.973);
+        font-size: 40px;
+    }
+
+.seccion1{
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+.seccion1 .portada span{
+        font-size: 60px;
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+.relleno{
+        justify-content: center;
+        padding: 60px 0px 20px 0px;
+    }
+
+.relleno a{
+    font-size: 15px;
+}
+
+.seccion, .planes, .seccion4 .clientes {
+        flex-direction: column;
+        align-items: center;  /* Centra los elementos en el eje cruzado */
+        width: 100%;          /* Asegura que cada sección ocupe todo el ancho disponible */
+    }
+
+.seccion .logo {
+        width: 100vw;
+        padding-right: 2rem;  /* Asegura que estos elementos usen todo el ancho disponible */  
+        padding-bottom: 2rem;   
+       }
+
+
+.seccion .vision{
+        width: 100vw;
+        padding-left: 3rem;
+    }
+
+.seccion .logo span, .seccion .vision span{
+    font-size: 1rem;
+}
+
+.planes > div {
+        
+     flex-grow: 0; /* Desactiva el crecimiento automático en móviles */
+     width: 90%; /* Ajusta el ancho de cada plan para ocupar más espacio */
+     margin: 20px 0px 10px 0px;
+    }
+
+#seccion3 {
+    padding-top: 20px;
+}
+
+#seccion3 h3 {
+        font-size: 45px; /* Reduce el tamaño del título en la sección de planes */
+    }
+
+.seccion4 .clientes {
+       flex-direction: column; /* Cambia la disposición de clientes a vertical */
+    }
+
+
+}
